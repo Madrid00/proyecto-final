@@ -16,6 +16,7 @@ public class Mensaje {
     @Id
     private String id;
     private String titulo;
+    private String cuerpo;
 
     public String getId() {
         return id;
@@ -33,9 +34,10 @@ public class Mensaje {
         this.titulo = titulo;
     }
 
-    public Mensaje(String id, String titulo) {
+    public Mensaje(String id, String titulo, String cuerpo) {
         this.id = id;
         this.titulo = titulo;
+        this.cuerpo = cuerpo;
     }
 
     public Mensaje(String titulo) {
@@ -43,6 +45,14 @@ public class Mensaje {
     }
 
     public Mensaje() {
+    }
+
+    public String getCuerpo() {
+        return cuerpo;
+    }
+
+    public void setCuerpo(String cuerpo) {
+        this.cuerpo = cuerpo;
     }
 
     
